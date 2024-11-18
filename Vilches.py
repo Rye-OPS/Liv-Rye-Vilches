@@ -31,7 +31,7 @@ def submit():
     email.delete(0,END)
 
 def query():
-    conn=sqlite3.connect('C:/Users/STUDENTS/Desktop/donn.db')
+    conn=sqlite3.connect('C:/Users/STUDENTS/Desktop/vilches.db')
     c=conn.cursor()
     c.execute("SELECT*,oid FROM Student=info")
     records=c.fetchall()
@@ -56,7 +56,7 @@ def delete ():
     conn.close()
 
 def update():
-    conn=sqlite3.connect('C:/Users/STUDENTS/Desktop/donn.db')
+    conn=sqlite3.connect('C:/Users/STUDENTS/Desktop/vilches.db')
     c=conn.cursor()
 
     record_id=delete_box.get()
@@ -86,7 +86,7 @@ def edit():
     editor.title('Update Record from database')
     editor.geometry("500x500")
 
-    conn=sqlite3.connect('C:/Users/STUDENTS/Desktop/donn.db')
+    conn=sqlite3.connect('C:/Users/STUDENTS/Desktop/vilches.db')
     c=conn.cursor()
 
     record_id=delete_box.get()
