@@ -9,7 +9,7 @@ conn=sqlite3.connect('don')
 c=conn.cursor()
 
 def submit():
-    conn=sqlite3.connect('donn.db')
+    conn=sqlite3.connect('vilches.db')
     
     c=conn.cursor()
 
